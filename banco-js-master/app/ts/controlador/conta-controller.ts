@@ -20,8 +20,7 @@ class ContaController {
         const elementoNumero = <HTMLInputElement>document.querySelector('#numero');
         const elementoSaldo = <HTMLInputElement>document.querySelector('#saldo');
 
-        const conta = new Conta(elementoNumero.value,
-            Number(elementoSaldo.value));
+        const conta = new Conta(elementoNumero.value, Number(elementoSaldo.value));
         this.repositorioContas.adicionar(conta);
         this.inserirContaNoHTML(conta);
     }
