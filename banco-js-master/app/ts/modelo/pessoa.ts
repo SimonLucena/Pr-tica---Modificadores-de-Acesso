@@ -1,12 +1,12 @@
 class Pessoa {
     protected _nome: string;
     private _idade: number;
-    private _dataNascimento: Date;
+    private _dataNascimento: string;
 
     constructor(nome: string, idade: number, dataNascimento: string) {
         this._nome = nome;
         this._idade = idade;
-        this._dataNascimento = new Date(dataNascimento);
+        this._dataNascimento = dataNascimento;
     }
 
     get nome(): string {
@@ -26,11 +26,11 @@ class Pessoa {
         this._idade = v;
     }
 
-    get dataNascimento(): Date {
+    get dataNascimento(): string {
         return this._dataNascimento;
     }
 
-    set dataNascimento(v : Date) {
+    set dataNascimento(v : string) {
         this._dataNascimento = v;
     }
 

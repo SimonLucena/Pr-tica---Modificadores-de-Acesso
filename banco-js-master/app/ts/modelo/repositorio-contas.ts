@@ -1,5 +1,4 @@
 class RepositorioContas {
-
     readonly contas: Array<Conta>;
 
     constructor() {
